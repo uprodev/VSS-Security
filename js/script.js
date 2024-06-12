@@ -250,7 +250,7 @@ jQuery(document).ready(function ($) {
         minlength: 3,
         required: true,
       },
-      company:{
+      lastName:{
         minlength: 3,
         required: true,
       },
@@ -263,12 +263,28 @@ jQuery(document).ready(function ($) {
         required: true,
         emailtld: true,
       },
+      input21:{
+        minlength: 3,
+        required: true,
+      },
+      input22:{
+        minlength: 3,
+        required: true,
+      },
+      input23:{
+        minlength: 3,
+        required: true,
+      },
+      input24:{
+        minlength: 3,
+        required: true,
+      },
     },
     messages: {
       name:{
         minlength: "Enter at least 3 characters"
       },
-      company:{
+      lastName:{
         minlength: "Enter at least 3 characters"
       },
       emailStep:{
@@ -276,6 +292,18 @@ jQuery(document).ready(function ($) {
       },
       tel:{
         minlength: "Please enter your phone number"
+      },
+      input21:{
+        minlength: "Enter at least 3 characters"
+      },
+      input22:{
+        minlength: "Enter at least 3 characters"
+      },
+      input23:{
+        minlength: "Enter at least 3 characters"
+      },
+      input24:{
+        minlength: "Enter at least 3 characters"
       },
     }
   });
@@ -299,7 +327,7 @@ jQuery(document).ready(function ($) {
 
   });
 
-  $(document).on('click', '.form-step .nice-select .option', function (e){
+/*  $(document).on('click', '.form-step .nice-select .option', function (e){
     $(this).closest('.select-block').removeClass('input-wrap-val');
 
     let item = $(this).closest('.swiper-slide').find('.input-wrap-val').length,
@@ -310,7 +338,7 @@ jQuery(document).ready(function ($) {
     }else{
       itemBTN.removeClass('is-go-next')
     }
-  });
+  });*/
 
 
   //next slide
@@ -320,7 +348,7 @@ jQuery(document).ready(function ($) {
   });
 
   //prev slide
-  $(document).on('click', '.btn-back', function (e){
+  $(document).on('click', '.btn-prev', function (e){
     e.preventDefault();
     swiperStepForm.slidePrev();
   });

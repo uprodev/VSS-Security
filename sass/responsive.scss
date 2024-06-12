@@ -325,6 +325,17 @@ $grey: #E8E8EB;
   .img-full-slider .swiper-slide img{
     height: 350px;
   }
+  .contact-banner .form-wrap {
+    padding: 25px;
+    width: 550px;
+  }
+  .contact-banner .info-text {
+    width: calc(100% - 220px);
+    margin-top: -50px;
+  }
+  .contact-banner .top-form .title-wrap h4 {
+    font-size: 24px;
+  }
 }
 
 @media (max-width:991px) {
@@ -578,6 +589,43 @@ $grey: #E8E8EB;
     width: 540px;
     min-height: 560px;
   }
+  .contact-banner .form-wrap{
+    width: 100%;
+    position: relative;
+  }
+  .contact-banner .top-wrap .bg{
+    bottom: 100px;
+  }
+  .contact-banner{
+    margin-bottom: 15px;
+  }
+  .bg-text-img figure:before{
+    display: none;
+  }
+  .bg-text-img figure{
+    border-radius: 0 0 15px 15px;
+    overflow: hidden;
+  }
+  .knowledge-banner .filter .left{
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  .knowledge-banner .filter .right{
+    width: 100%;
+    justify-content: space-between;
+  }
+  .knowledge-banner .filter .wrap{
+    flex-wrap: wrap;
+  }
+  .knowledge-banner .filter .right .select-block{
+    margin-right: 0;
+  }
+  .knowledge-banner .filter .right .input-wrap {
+    width: calc(50% - 35px);
+  }
+  .knowledge-banner .filter .right .input-wrap-submit{
+    width: 44px;
+  }
 }
 
 @media (max-width:767px) {
@@ -664,6 +712,42 @@ $grey: #E8E8EB;
   }
   .default-text{
     padding: 75px 0;
+  }
+  .banner-404 .bg{
+    display: none;
+  }
+  .banner-404 .text{
+    text-align: center;
+    .label-red{
+      justify-content: center;
+    }
+    .btn-wrap{
+      justify-content: center;
+    }
+  }
+  .knowledge-banner .bg img{
+    display: none;
+  }
+  .knowledge-banner .text{
+    text-align: center;
+    .label-red{
+      justify-content: center;
+    }
+    .btn-wrap{
+      justify-content: center;
+    }
+  }
+  .knowledge-banner .filter{
+    padding: 20px;
+  }
+  .knowledge-banner .filter .right .input-wrap {
+    width: calc(50% - 30px);
+  }
+  .knowledge-banner .filter .right input{
+    padding: 0 15px;
+  }
+  .knowledge-banner .filter .right .input-wrap-submit{
+    width: 44px;
   }
 }
 
@@ -1038,5 +1122,45 @@ $grey: #E8E8EB;
   .default-text .nav-wrap{
     top: 10px;
     right: 10px;
+  }
+  .contact-banner .top-form{
+    justify-content: center!important;
+  }
+  .contact-banner .top-form .title-wrap{
+    width: 100%;
+    margin-top: 20px;
+    h4{
+      text-align: center;
+    }
+  }
+  .contact-banner .info-text{
+    margin-top: 20px;
+    width: 100%;
+    p{
+      text-align: center;
+    }
+  }
+  .contact-banner .bottom-content{
+    padding: 0 15px;
+  }
+  .knowledge-banner .filter{
+    width: calc(100% - 30px);
+    margin: 0 15px;
+  }
+  .knowledge-banner .filter .input-wrap-check label {
+    padding: 0 13px;
+    font-size: 14px;
+  }
+  .knowledge-banner .filter {
+    padding: 15px;
+  }
+  .knowledge-banner .filter .right .input-wrap{
+    width: 100%;
+  }
+  .knowledge-banner .filter .right{
+    flex-wrap: wrap;
+  }
+  .knowledge-banner .filter .right .input-wrap-submit{
+    padding-top: 0;
   }
 }

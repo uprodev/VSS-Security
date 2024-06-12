@@ -2391,7 +2391,7 @@ footer{
       font-stretch: normal;
       font-style: normal;
       line-height: 1.2;
-      margin-bottom: 5px;
+      margin-bottom: 10px;
       letter-spacing: -0.5px;
       color: #fff;
     }
@@ -3206,6 +3206,17 @@ footer{
 /*----------------------ITEM-4X---------------------------*/
 .item-4x{
   padding: 133px 0 157px;
+  .top{
+    margin: 0 auto 40px;
+    width: 535px;
+    max-width: 100%;
+    h3{
+      margin-bottom: 5px;
+    }
+    p{
+      font-size: 18px;
+    }
+  }
   .content{
     grid-gap: 15px 16px;
     padding: 0;
@@ -3890,7 +3901,7 @@ footer{
     border-radius: 5px;
   }
   .swiper-pagination-progressbar .swiper-pagination-progressbar-fill{
-    border-radius: 5px 0 0 5px;
+    border-radius: 5px;
   }
   .sub-title{
     font-size: 16px;
@@ -3909,6 +3920,9 @@ footer{
     justify-content: space-between;
     flex-wrap: wrap;
     grid-gap: 16px;
+  }
+  .swiper-slide-2,  .swiper-slide-3{
+    padding-bottom: 60px;
   }
   .input-wrap{
     width: calc(50% - 8px);
@@ -3944,6 +3958,23 @@ footer{
     width: 100%;
     margin-top: 30px;
     position: relative;
+  }
+  .btn-wrap{
+    a{
+      width: auto;
+    }
+    .link{
+      color: #fff;
+      i{
+        margin: 0 10px 0 0;
+      }
+      &:hover{
+        opacity: 0.7;
+        i{
+          left: 0;
+        }
+      }
+    }
   }
   .btn-wrap-dis{
     position: relative;
@@ -4016,7 +4047,16 @@ footer{
     }
   }
 }
-
+.form-step .input-wrap{
+  position: relative;
+  label.error{
+    position: absolute;
+    font-size: 12px;
+    color: #fff;
+    bottom: -17px;
+    left: 0;
+  }
+}
 /*---------------------END-DEFAULT-TEXT----------------------*/
 /*---------------------STEP-CART----------------------*/
 .step-card{
@@ -4270,7 +4310,220 @@ section{
     }
   }
 }
+
+.list-link{
+  margin-bottom: 0!important;
+  li{
+    padding: 0!important;
+  }
+}
 /*-------------------END-KNOWLEDGE-BANNER----------------------*/
+/*-------------------CONTACT-BANNER----------------------*/
+.contact-banner{
+  background: transparent!important;
+  margin-bottom: 75px;
+  .content{
+    position: relative;
+    padding-bottom: 25px;
+  }
+  .tel-wrap{
+    a{
+      display: flex;
+      align-items: center;
+      font-size: 16px;
+      font-weight: normal;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: 1.13;
+      text-align: left;
+      color: #fff;
+      letter-spacing: -0.5px;
+      span{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 34px;
+        height: 34px;
+        border-radius: 100%;
+        margin-right: 10px;
+        font-size: 16px;
+        color: $red;
+        background: #fff;
+        transition: all .4s ease;
+      }
+      b{
+        display: inline-block;
+        color: $red;
+        margin-left: 5px;
+        font-weight: 400;
+      }
+      &:hover{
+        span{
+          transform: rotate(360deg);
+        }
+      }
+    }
+    a + a{
+      margin-top: 22px;
+    }
+  }
+  .form-wrap{
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 46px 49px 48px;
+    border-radius: 14px;
+    box-shadow: 0 3px 16px 0 rgba(0, 0, 0, 0.16);
+    background-color: #fff;
+    width: 655px;
+  }
+  .text{
+    padding: 10px 0 0;
+  }
+  .label-red{
+    margin-bottom: 5px;
+  }
+  .top-form{
+    margin-bottom: 30px;
+    figure .img-2 {
+      margin: 0 0 0 -40px;
+    }
+    figure .img-3 {
+      margin: 0 0 0 -32px;
+    }
+    figure{
+      width: 190px;
+      &:before{
+        display: none;
+      }
+      .img{
+        border: 3px solid #fff;
+        width: 82px;
+        height: 82px;
+        min-height: 0;
+        border-radius: 100%;
+      }
+    }
+    .title-wrap{
+      width: calc(100% - 200px);
+      h4{
+        margin: 0;
+        font-size: 27px;
+        font-weight: bold;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1.19;
+        color: #000;
+        b{
+          color: $red;
+          font-weight: bold;
+        }
+      }
+    }
+  }
+  .info-text{
+    width: calc(100% - 260px);
+    margin-top: -45px;
+    p{
+      font-size: 14px;
+      font-weight: normal;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: 1.57;
+      letter-spacing: 0;
+      color: #000;
+      a{
+        text-decoration: underline;
+        color: #000;
+        &:hover{
+          text-decoration: none;
+        }
+      }
+    }
+  }
+  .top-wrap{
+    position: relative;
+    padding-top: 80px;
+    .bg{
+      background: $blue;
+    }
+  }
+  .bottom-wrap{
+    margin-top: 37px;
+    p{
+      font-weight: normal;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: 1.44;
+      letter-spacing: normal;
+      text-align: left;
+      color: #14143b;
+      margin-bottom: 0;
+      a{
+        font-weight: normal;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1.44;
+        letter-spacing: normal;
+        text-align: left;
+        color: #14143b;
+        text-decoration: underline;
+        &:hover{
+          opacity: 0.7;
+        }
+      }
+    }
+    ul{
+      margin-top: 26px;
+      li{
+        font-weight: normal;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1.44;
+        letter-spacing: normal;
+        text-align: left;
+        color: #14143b;
+      }
+    }
+  }
+  .bottom-content{
+    width: 300px;
+    padding: 0;
+  }
+}
+
+.form-grey{
+  input, textarea{
+    background: $grey;
+  }
+}
+.bg-text-img:last-child{
+  padding-bottom: 147px;
+}
+.nice-select{
+  font-size: 16px;
+}
+/*------------------END-CONTACT-BANNER----------------------*/
+/*------------------BANNER-404----------------------*/
+.banner-404.bg-grey{
+  padding: 170px 0 197px;
+  .bg{
+    background: transparent;
+    bottom: 0!important;
+  }
+}
+.btn-circle-revers{
+  padding: 0 25px 0 5px;
+  span{
+    margin: 0 20px 0 0;
+  }
+  &:hover{
+    i{
+      transform: rotate(45deg);
+    }
+  }
+}
+/*-----------------END-BANNER-404----------------------*/
 .bg-white{
   background: #fff;
   .item{
@@ -4304,4 +4557,7 @@ section{
 .p-80{
   padding-top: 80px;
   padding-bottom: 80px;
+}
+.pb-120{
+  padding-bottom: 120px;
 }
