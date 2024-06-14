@@ -30,6 +30,11 @@ jQuery(document).ready(function ($) {
     },
   });
 
+  //fix header
+  $(".top-line").sticky({
+    topSpacing:0
+  });
+
   //slider
   var swiperCases = new Swiper(".cases-slider", {
     slidesPerView: 1,

@@ -1125,6 +1125,9 @@
         flex-wrap: wrap; }
 
   .knowledge-banner .filter .right .input-wrap-submit {
-    padding-top: 0; } }
+    padding-top: 0; }
+
+  .form-step .btn-wrap-dis button, .form-step .btn-wrap-dis a {
+    min-width: 130px; } }
 
 /*# sourceMappingURL=responsive.css.map */

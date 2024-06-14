@@ -264,7 +264,8 @@ header {
   padding: 18px 0 12px;
   position: relative;
   -webkit-transition: all .4s ease;
-  transition: all .4s ease; }
+  transition: all .4s ease;
+  background: #fff; }
   .top-line .logo-wrap {
     width: 192px; }
     .top-line .logo-wrap img {
@@ -275,7 +276,9 @@ header {
     margin-left: 20px; }
 
 .is-sticky .top-line {
-  padding: 10px 0; }
+  padding: 10px 0;
+  -webkit-box-shadow: 0 3px 16px 0 rgba(0, 0, 0, 0.16);
+          box-shadow: 0 3px 16px 0 rgba(0, 0, 0, 0.16); }
   .is-sticky .top-line .logo-wrap {
     width: 150px; }
 
@@ -2544,7 +2547,7 @@ footer {
 .blog-slider {
   overflow: visible; }
   .blog-slider .swiper-slide {
-    width: 370px; }
+    width: 369px; }
     .blog-slider .swiper-slide figure {
       border-radius: 15px 15px 0 0;
       overflow: hidden;
@@ -4022,9 +4025,10 @@ section .breadcrumb {
 
 /*------------------END-CONTACT-BANNER----------------------*/
 /*------------------BANNER-404----------------------*/
-.banner-404.bg-grey {
-  padding: 170px 0 197px; }
-  .banner-404.bg-grey .bg {
+.banner-404 {
+  padding: 170px 0 197px;
+  background: #fff; }
+  .banner-404 .bg {
     background: transparent;
     bottom: 0 !important; }
 

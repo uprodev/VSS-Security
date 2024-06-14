@@ -1163,4 +1163,7 @@ $grey: #E8E8EB;
   .knowledge-banner .filter .right .input-wrap-submit{
     padding-top: 0;
   }
+  .form-step .btn-wrap-dis button, .form-step .btn-wrap-dis a {
+    min-width: 130px;
+  }
 }

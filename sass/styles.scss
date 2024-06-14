@@ -297,6 +297,7 @@ header{
   padding: 18px 0 12px;
   position: relative;
   transition: all .4s ease;
+  background: #fff;
   .logo-wrap{
     width: 192px;
     img{
@@ -311,6 +312,7 @@ header{
 .is-sticky{
   .top-line{
     padding: 10px 0;
+    box-shadow: 0 3px 16px 0 rgba(0, 0, 0, 0.16);
     .logo-wrap{
       width: 150px;
     }
@@ -2830,7 +2832,7 @@ footer{
 .blog-slider{
   overflow: visible;
   .swiper-slide{
-    width: 370px;
+    width: 369px;
     figure{
       border-radius: 15px 15px 0 0;
       overflow: hidden;
@@ -4505,8 +4507,9 @@ section{
 }
 /*------------------END-CONTACT-BANNER----------------------*/
 /*------------------BANNER-404----------------------*/
-.banner-404.bg-grey{
+.banner-404{
   padding: 170px 0 197px;
+  background: #fff;
   .bg{
     background: transparent;
     bottom: 0!important;
