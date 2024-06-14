@@ -1128,6 +1128,11 @@
     padding-top: 0; }
 
   .form-step .btn-wrap-dis button, .form-step .btn-wrap-dis a {
-    min-width: 130px; } }
+    min-width: 130px; }
+
+  .form-step .swiper-slide-2 .input-wrap-submit, .form-step .swiper-slide-3 .input-wrap-submit {
+    -webkit-box-pack: justify !important;
+        -ms-flex-pack: justify !important;
+            justify-content: space-between !important; } }
 
 /*# sourceMappingURL=responsive.css.map */

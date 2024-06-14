@@ -1166,4 +1166,9 @@ $grey: #E8E8EB;
   .form-step .btn-wrap-dis button, .form-step .btn-wrap-dis a {
     min-width: 130px;
   }
+  .form-step .swiper-slide-2, .form-step .swiper-slide-3{
+    .input-wrap-submit{
+      justify-content: space-between!important;
+    }
+  }
 }
