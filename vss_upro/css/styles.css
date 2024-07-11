@@ -914,9 +914,10 @@ header {
       line-height: 1.63; }
   .usp-section .content {
     grid-gap: 16px;
+    justify-content: center;
     padding: 0; }
   .usp-section .bottom {
-    margin: 37px auto -40px;
+    margin: 50px auto -40px;
     padding: 8px;
     border-radius: 66px;
     -webkit-box-shadow: 0 3px 16px 0 rgba(0, 0, 0, 0.16);
@@ -1448,15 +1449,23 @@ header {
 .h-54 {
   height: 54px;
   line-height: 52px; }
-
+.step-slider .swiper-slide{
+  opacity: 0;
+}
 .step-slider {
   overflow: visible; }
+.step-slider .swiper-slide-next, .step-slider .swiper-slide-active, .step-slider .swiper-slide-next + .swiper-slide{
+  opacity: 1;
+}
   .step-slider .swiper-slide {
     width: 560px;
     border-radius: 20px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+
+    -webkit-transition: all .4s ease;
+    transition: all .4s ease;
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
@@ -1611,6 +1620,7 @@ header {
     padding: 0 22px;
     margin-top: -38px; }
     .references .bottom ul {
+      justify-content: space-between;
       width: 100%;
       background: #E6544B; }
       .references .bottom ul li {
@@ -2698,6 +2708,7 @@ footer {
     padding: 54px 20px 0 0; }
   .history .right {
     position: relative;
+    padding-top: 50px;
     padding-left: 55px; }
     .history .right .after {
       position: absolute;
@@ -2725,6 +2736,9 @@ footer {
       background: #E6544B;
       height: 75px; }
     .history .right .info {
+      position: absolute;
+      top: 0;
+      left: 55px;
       font-size: 15px;
       font-weight: bold;
       font-stretch: normal;
@@ -2941,8 +2955,22 @@ footer {
     padding: 0; }
   .vacancy-content .item {
     width: calc(33.33% - 10px);
+    position: relative;
     border-radius: 15px;
     background: #fff; }
+.vacancy-content .item>a{
+  position: absolute;
+  top: 0;
+  z-index: 3;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.vacancy-content .item>a:hover +.wrap .text .arrow-wrap i {
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
     .vacancy-content .item .label-blog {
       position: absolute;
       top: 20px;
@@ -3337,7 +3365,7 @@ footer {
       .default-text .content > ul li {
         position: relative;
         padding-left: 20px;
-        margin-bottom: 12px; }
+        margin-bottom: 8px; }
         .default-text .content > ul li:before {
           position: absolute;
           top: 0;
@@ -4041,6 +4069,34 @@ section .breadcrumb {
             transform: rotate(45deg); }
 
 /*-----------------END-BANNER-404----------------------*/
+.knowledge-banner .filter .left{
+  width: 40%;
+}
+
+.knowledge-banner .filter .left label{
+  font-size: 16px;
+  font-weight: 600;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.3;
+  margin-bottom: 12px;
+  display: block;
+  color: #000;
+}
+.form-white .input-wrap{
+  position: relative;
+}
+
+.form-white{
+  position: relative;
+}
+
+.form-white .wpcf7-response-output{
+  position: absolute;
+  bottom: -35px;
+  left: 0;
+  margin: 0!important;
+}
 .bg-white {
   background: #fff; }
   .bg-white .item {
@@ -4070,5 +4126,21 @@ section .breadcrumb {
 
 .pb-120 {
   padding-bottom: 120px; }
+.bg-top-grey.big-form-card .bg{
+  bottom: 55%;
+}
+
+.default-text .form-wrap .wpcf7-not-valid-tip{
+  display: none;
+}
+.btn-circle.load_news:hover i{
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+.btn-circle.load:hover i{
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
 
 /*# sourceMappingURL=styles.css.map */

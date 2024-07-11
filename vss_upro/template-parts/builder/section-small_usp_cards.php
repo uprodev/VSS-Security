@@ -6,6 +6,19 @@ if($args['row']):
 		<section class="item-4x"<?php if($id) echo ' id="' . $id . '"' ?>>
 			<div class="container">
 				<div class="row">
+
+					<?php if ($title || $text): ?>
+						<div class="top text-center">
+
+							<?php if ($title): ?>
+								<h3><?= $title ?></h3>
+							<?php endif ?>
+							
+							<?= $text ?>
+							
+						</div>
+					<?php endif ?>
+					
 					<div class="content d-flex flex-wrap">
 
 						<?php foreach ($card_items as $item): ?>

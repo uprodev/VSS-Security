@@ -2,7 +2,7 @@
 if($args['row']):
 	foreach($args['row'] as $key=>$arg) $$key = $arg; ?>
 
-	<section class="about"<?php if($id) echo ' id="' . $id . '"' ?>>
+	<section class="about<?php if($background_color == 'Grey') echo ' bg-grey' ?>"<?php if($id) echo ' id="' . $id . '"' ?>>
 		<div class="container">
 			<div class="row">
 				<div class="content d-flex justify-content-between flex-wrap">

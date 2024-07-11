@@ -83,3 +83,19 @@ function my_acf_layout_thumbnail($thumbnail, $field, $layout){
 	return get_stylesheet_directory_uri() . '/img/acf/' . $layout['name'] . '.png';
 
 }
+
+
+function checkArrayForValues($arr) {
+    foreach ($arr as $value) {
+        if (is_array($value)) {
+            if (checkArrayForValues($value)) {
+                return true;
+            }
+        } else {
+            if (!empty($value)) {
+                return true;
+            }
+        }
+    }
+    return false;
+}

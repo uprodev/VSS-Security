@@ -55,7 +55,7 @@ if($args['row']):
 					<script> var this_page = 1; </script>
 
 					<div class="btn-wrap d-flex justify-content-center">
-						<a href="#" class="btn-circle load_vacancies" data-param-posts='<?php echo serialize($wp_query->query_vars); ?>' data-max-pages='<?php echo $wp_query->max_num_pages; ?>'><?= $load_more_button_text ?> <span><i class="fa-solid fa-arrow-down"></i></span></a>
+						<a href="#" class="btn-circle load_vacancies load" data-param-posts='<?php echo serialize($wp_query->query_vars); ?>' data-max-pages='<?php echo $wp_query->max_num_pages; ?>'><?= $load_more_button_text ?> <span><i class="fa-solid fa-arrow-down"></i></span></a>
 					</div>
 				<?php endif ?>
 

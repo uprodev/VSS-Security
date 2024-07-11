@@ -127,11 +127,16 @@ jQuery(document).ready(function ($) {
 
   //slider
   var swiperReferences = new Swiper(".references-slider", {
+    autoHeight: true,
     navigation: {
       nextEl: ".references-next",
       prevEl: ".references-prev",
     },
   });
+
+  setTimeout(function(){
+    swiperReferences.update();
+  },500);
 
   //click dot
   $(document).on('click', '.references .bottom ul a', function (e){

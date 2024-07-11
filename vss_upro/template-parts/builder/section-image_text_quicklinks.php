@@ -47,8 +47,8 @@ if($args['row']):
 								<div class="select-block">								
 									<div class="nice-select" tabindex="0">
 
-										<?php if ($list_title): ?>
-											<span class="current"><?= $list_title ?></span>
+										<?php if ($list_placeholder_text): ?>
+											<span class="current"><?= $list_placeholder_text ?></span>
 										<?php endif ?>
 
 										<ul class="list">

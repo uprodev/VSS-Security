@@ -2,6 +2,14 @@
 Theme Name: VSS
 */
 
+.section-img-text + .step-slider-section{
+  margin-top: 0!important;
+}
+.form-step .wpcf7-response-output {
+  position: absolute;
+  bottom: -30px;
+  left: -6px;
+}
 .banner-404 h1{
   color: #000;
 }
@@ -9,7 +17,9 @@ Theme Name: VSS
   color: #000;
 }
 
-
+.form-step .swiper-slide-3 .input-wrap-submit{
+  justify-content: space-between!important;
+}
 .btn-circle-white{
   white-space: nowrap;
 }
@@ -19,7 +29,9 @@ Theme Name: VSS
   min-width: 100%;
   padding-left: 15px;
 }
-
+.nice-select .option:before{
+  display: none;
+}
 .heating-50 span{
   width: 40px;
   height: 40px;
@@ -48,4 +60,43 @@ Theme Name: VSS
   z-index: 2;
   content: '';
   
+}
+
+.step-slider-section .wpcf7-not-valid-tip{
+  color:#fff;
+}
+
+.wpcf7 form .wpcf7-response-output{
+  border-radius: 3px;
+  background: #00a0d2;
+  color: #fff;
+  font-size: 12px;
+}
+
+.wpcf7 form.invalid .wpcf7-response-output, .wpcf7 form.unaccepted .wpcf7-response-output, .wpcf7 form.payment-required .wpcf7-response-output {
+  background: #ffb900;
+}
+
+.wpcf7 form.sent .wpcf7-response-output {
+  background: #46b450;
+}
+
+.cases-slider .text-wrap .title{
+  font-size: 25px;
+}
+
+.big-form-card .wpcf7-not-valid-tip{
+  position: absolute;
+  left: 0;
+  bottom: -30px;
+  font-size: 12px;
+  line-height: 1.1;
+  color: #fff;
+}
+
+
+@media (max-width: 575px){
+  .form-step .wpcf7-response-output{
+    bottom: -15px;
+  }
 }
