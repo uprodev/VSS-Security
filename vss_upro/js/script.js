@@ -134,9 +134,12 @@ jQuery(document).ready(function ($) {
     },
   });
 
-  setTimeout(function(){
-    swiperReferences.update();
-  },500);
+  if($('.references-slider').length >0){
+    setTimeout(function(){
+      swiperReferences.update();
+    },500);
+  }
+
 
   //click dot
   $(document).on('click', '.references .bottom ul a', function (e){
@@ -318,7 +321,7 @@ jQuery(document).ready(function ($) {
     }
   });
 
-  $('.form-step .input-wrap-val input').on('keyup blur', function () {
+  $('.form-step .input-wrap input').on('keyup blur', function () {
 
     if ($(this).valid()) {
       $(this).closest('.input-wrap').removeClass('input-wrap-val')

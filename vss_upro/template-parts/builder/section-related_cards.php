@@ -39,6 +39,7 @@ if($args['row']):
 								?>
 
 								<div class="item">
+									<a href="<?php the_permalink() ?>"></a>
 									<figure>
 
 										<?php if ($label_): ?>

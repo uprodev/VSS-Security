@@ -3000,7 +3000,7 @@ footer {
     .vacancy-content .item .text {
       padding: 27px 35px 40px;
       border-radius: 0 0 15px 15px;
-      position: relative;
+
       min-height: 270px; }
       .vacancy-content .item .text p {
         font-size: 16px;
@@ -4131,7 +4131,12 @@ section .breadcrumb {
 }
 
 .default-text .form-wrap .wpcf7-not-valid-tip{
-  display: none;
+  position: absolute;
+  bottom: -28px;
+  left: 0;
+  font-size: 12px;
+  line-height: 1;
+  color: #fff;
 }
 .btn-circle.load_news:hover i{
   -webkit-transform: rotate(45deg);
@@ -4142,5 +4147,45 @@ section .breadcrumb {
   -webkit-transform: rotate(45deg);
   transform: rotate(45deg);
 }
+.usp-section .content{
+  grid-gap: 40px 16px;
+  justify-content: flex-start;
+}
 
+
+.blog-slider .swiper-slide{
+  opacity: 0;
+}
+
+.blog-slider .swiper-slide-active{
+  opacity: 1;
+}
+.blog-slider .swiper-slide-next{
+  opacity: 1;
+}
+
+.blog-slider .swiper-slide-next + .swiper-slide{
+  opacity: 1;
+}
+.blog-slider .swiper-slide-next + .swiper-slide + .swiper-slide{
+  opacity: 1;
+}
+
+.form-step .input-wrap label.error{
+  bottom: -35px;
+  display: none!important;
+}
+
+.vacancy-content .item:hover .text .arrow-wrap a i{
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
+
+.vacancy-content .btn-wrap a:hover i{
+  -webkit-transform: rotate(90deg);
+  transform: rotate(90deg);
+}
+.default-text .slier-wrap .line{
+  margin-top: 10px;
+}
 /*# sourceMappingURL=styles.css.map */

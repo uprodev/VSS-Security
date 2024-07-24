@@ -3,7 +3,7 @@ if($args['row']):
 	foreach($args['row'] as $key=>$arg) $$key = $arg; ?>
 
 	<?php if ($card_items): ?>
-		<section class="item-4x"<?php if($id) echo ' id="' . $id . '"' ?>>
+		<section class="item-4x<?php if($background_color == 'Grey') echo ' bg-grey'; if(!$is_padding_top) echo ' pt-0'; if(!$is_padding_bottom) echo ' pb-0';; if(!$is_margin_bottom) echo ' mb-0'; ?>"<?php if($id) echo ' id="' . $id . '"' ?>>
 			<div class="container">
 				<div class="row">
 

@@ -132,37 +132,33 @@ if($args['row']):
 								case 'link_and_socials_share_block':
 								?>
 
-								<?php if ($field = get_field('socials_share_block_d', 'option')): ?>
-									<div class="bottom-link d-flex flex-wrap justify-content-between align-items-center">
+								<div class="bottom-link d-flex flex-wrap justify-content-between align-items-center">
 
-										<?php if ($field['prev_link_text']): ?>
-											<div class="link-wrap">
-												<a href="#" onclick="history.back();"><i class="fa-regular fa-arrow-left"></i><?= $field['prev_link_text'] ?></a>
-											</div>
-										<?php endif ?>
-
-										<?php if ($field['items']): ?>
-											<ul class="soc-list d-flex align-items-center">
-
-												<?php if ($field['title']): ?>
-													<li><p><?= $field['title'] ?></p></li>
-												<?php endif ?>
-
-												<?php foreach ($field['items'] as $item_2): ?>
-													<?php if ($item_2['icon']): ?>
-														<li>
-															<a href="<?= $item_2['url'] ?>" target="_blank">
-																<i class="<?= $item_2['icon'] ?>"></i>
-															</a>
-														</li>
-													<?php endif ?>
-												<?php endforeach ?>
-
-											</ul>
-										<?php endif ?>
-
+									<div class="link-wrap">
+										<a href="#" onclick="history.back();"><i class="fa-regular fa-arrow-left"></i><?= get_field('previous_page_text_s', 'option') ?></a>
 									</div>
-								<?php endif ?>
+
+									<?php if ($items_2 = get_field('share_icons_s', 'option')): ?>
+										<ul class="soc-list d-flex align-items-center">
+
+											<?php if ($field = get_field('share_text_s', 'option')): ?>
+												<li><p><?= $field ?></p></li>
+											<?php endif ?>
+
+											<?php foreach ($items_2 as $item_2): ?>
+												<?php if ($item_2['icon'] && $item_2['share_link']): ?>
+													<li>
+														<a href="<?= $item_2['share_link']['url'] ?>"<?php if($item_2['share_link']['target']) echo ' target="_blank"' ?>>
+															<i class="<?= $item_2['icon'] ?>"></i>
+														</a>
+													</li>
+												<?php endif ?>
+											<?php endforeach ?>
+
+										</ul>
+									<?php endif ?>
+
+								</div>
 
 								<?php 
 								break;
